@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F4F7F7;
+  color: #0B1619;
+}
+
+::selection {
+  background-color: #21C7B0;
+  color: #0B1619;
+}
+
+.font-display {
+  font-family: 'Big Shoulders Display', sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.font-mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* clip diagonal edges used across sections */
+.clip-diagonal-b {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3.5vw), 0 100%);
+}
+.clip-diagonal-t {
+  clip-path: polygon(0 3.5vw, 100% 0, 100% 100%, 0 100%);
+}
+
+@keyframes drip {
+  0% { transform: translateY(-6px); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translateY(16px); opacity: 0; }
+}
+.animate-drip {
+  animation: drip 2.4s ease-in infinite;
+}
+
+@keyframes sheen {
+  0% { transform: translateX(-120%) skewX(-15deg); }
+  100% { transform: translateX(220%) skewX(-15deg); }
+}
+.animate-sheen {
+  animation: sheen 2.8s ease-in-out infinite;
+}
+
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
