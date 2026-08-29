@@ -136,8 +136,8 @@ export function SectionHeading({ eyebrow, title, text, light }) {
         {eyebrow}
       </span>
       <h2
-        className={`font-display text-4xl sm:text-5xl font-extrabold ${
-          light ? "text-white" : "text-slate-100"
+        className={`font-display text-4xl sm:text-5xl font-extrabold  ${
+          light ? "text-black" : "text-black"
         }`}
       >
         {title}
