@@ -4,13 +4,13 @@ import { ChevronRight, Sparkles, Home } from "lucide-react";
 
 export default function PageHeader({ eyebrow, title, text, crumb }) {
   return (
-    <section className="relative bg-slate-950 pt-36 pb-20 lg:pt-44 lg:pb-28 overflow-hidden border-b border-slate-900">
+    <section className="relative pt-36 pb-20 lg:pt-44 lg:pb-28 overflow-hidden border-b border-slate-900">
       {/* Background Image with Dark Gradient Overlay */}
-      <div className="absolute inset-0 z-0 opacity-25">
+      <div className="absolute inset-0 z-0 opacity-70">
         <img
           src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=2070&auto=format&fit=crop"
           alt="Car Detailing Studio Background"
-          className="w-full h-full object-cover object-center filter blur-xs"
+          className="w-full h-full object-cover object-center filter"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/90 to-slate-950" />
       </div>
